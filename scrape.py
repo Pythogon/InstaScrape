@@ -3,7 +3,7 @@ import os
 import time
 
 os.system("scrape.bat")
-with open("sole_nyu/sole_nyu.json", "r", encoding = "utf-8") as file:
+with open("TARGET_USER/TARGET_USER.json", "r", encoding = "utf-8") as file:
     read = json.load(file)
 data = read["GraphImages"][0]["comments"]["data"]
 array = []
